@@ -1,0 +1,40 @@
+<%- include ('header') %>
+<form action="/" method="post" class="'ui form">
+  <div class="ui form">
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
+    </div>
+  </div>
+  <button type="submit" class="ui animated button primary" tabindex="0">
+    <div class="visible content">Envoyer</div>
+    <div class="hidden content">
+      <i class="right arrow icon"></i>
+    </div>
+  </button>
+</form>
+
+<!-- j'affiche mes commentaires -->
+<div class="ui comments">
+  <h3 class="ui dividing header">Commentaires</h3>
+  <% messages.forEach(function(message) { %>
+  <div class="comment">
+    <a class="avatar" href="/message/<%= message.id %>">
+      <i class="user icon"></i>
+    </a>
+    <div class="content">
+      <div class="metadata">
+        <div class="date">
+          <%= message.created_at.fromNow() %>
+        </div>
+      </div>
+      <div class="test">
+        <%= message.content %>
+      </div>
+    </div>
+  </div>
+  <% }) %>
+</div>
+
+
+<%- include('footer') %>
