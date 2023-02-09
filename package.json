@@ -1,7 +1,7 @@
 {
   "name": "golden-book",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create a golden book with NodeJS, ExpressJS and EJS",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,5 +17,13 @@
     "moment": "^2.29.4",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcelin97/Golden_book.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Marcelin97/Golden_book/issues"
+  },
+  "homepage": "https://github.com/Marcelin97/Golden_book#readme"
 }
